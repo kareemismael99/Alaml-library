@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f7f2; 
+    color: #333;
+    height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+header nav {
+    padding-bottom: 30px;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+header h1{
+    color: white;
+    padding-top: 25px;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px; /* حواف أكثر انسيابية */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* ظل خفيف */
+}
+section ul li {
+    list-style: none;
+    font-size: 17px;
+}
+section a {
+    font-size: 17px;
+}
+section p{
+    font-size: 17px; }
+
+
+
+
+h1, h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+ /* التنسيق الافتراضي للجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+}
+
+table td {
+    font-size: 0.95rem;
+}
+
+/* استعلام الوسائط للشاشات الصغيرة */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* تحويل الجدول إلى عناصر كتلية */
+    }
+
+    thead tr {
+        display: none; /* إخفاء صف العناوين */
+    }
+
+    tbody tr {
+        margin-bottom: 1rem; /* إضافة مسافة بين الصفوف */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 1rem;
+    }
+
+    td {
+        text-align: right;
+        padding: 0.5rem;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label); /* إضافة اسم العمود بجانب كل خلية */
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.3rem;
+        color: #4CAF50;
+    }
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* تأثير عند التحويم */
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.8;
+}
