@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب - مكتبتنا</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>مرحباً بكم في مكتبة الأمل</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="aboutus.html">من نحن</a>
+            <a href="books.html">الكتب</a>
+        </nav>
+    </header>
+    <main>
+        <section id="books">
+            <h2>قائمة الكتب</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رمز الكتاب</th>
+                        <th>ISBN</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>اختيار الكتاب</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="رمز الكتاب">1</td>
+                        <td data-label="ISBN">978-9770916738</td>
+                        <td data-label="العنوان">ألف ليلة وليلة</td>
+                        <td data-label="السعر">25000 ل.س</td>
+                        <td data-label="اختيار الكتاب"><button class="select-btn" data-title="ألف ليلة وليلة"
+                                data-price="25000 ل.س">اختيار</button></td>
+                    </tr>
+                    <tr>
+                        <td data-label="رمز الكتاب">2</td>
+                        <td data-label="ISBN">978-9953891718</td>
+                        <td data-label="العنوان">موسم الهجرة إلى الشمال</td>
+                        <td data-label="السعر">12000 ل.س</td>
+                        <td data-label="اختيار الكتاب"><button class="select-btn" data-title="موسم الهجرة إلى الشمال"
+                                data-price="12000 ل.س">اختيار</button></td>
+                    </tr>
+                    <tr>
+                        <td data-label="رمز الكتاب">3</td>
+                        <td data-label="ISBN">978-9953451080</td>
+                        <td data-label="العنوان">الخبز الحافي</td>
+                        <td data-label="السعر">10000 ل.س</td>
+                        <td data-label="اختيار الكتاب"><button class="select-btn" data-title="الخبز الحافي"
+                                data-price="10000 ل.س">اختيار</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section id="form" style="display: none;">
+                <h2>طلب كتاب</h2>
+                <form id="order-form">
+                    <p><strong>الكتاب المختار:</strong> <span id="selected-book"></span></p>
+                    <label for="full-name">الاسم الكامل:</label>
+                    <input type="text" id="full-name">
+
+                    <label for="national-id">الرقم الوطني: </label>
+                    <input type="text" id="national-id" required>
+
+                    <label for="birth-date">تاريخ الميلاد:</label>
+                    <input type="date" id="birth-date">
+
+                    <label for="phone">رقم الموبايل:</label>
+                    <input type="tel" id="phone">
+
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email">
+
+                    <button type="submit">إرسال</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 مكتبتنا. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+
+</html>
